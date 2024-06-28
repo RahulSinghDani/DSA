@@ -202,7 +202,7 @@ def main():
 """
 
     # Display the HTML content using Streamlit's `st.components.v1.html` function
-    st.components.v1.html(html_content,unsafe_allow_html=True)
+    st.markdown(html_content, unsafe_allow_html=True)
 	
 
 if __name__ == "__main__":
