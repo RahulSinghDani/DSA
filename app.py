@@ -17,7 +17,7 @@ def main():
     <div class="container   min-h-screen px-6 py-3 ">
 
         <nav class="flex items-center gap-4 px-10 py-4">
-            <img src="./book.png" alt="" class="w-14 h-14">
+            <img src="book.png" alt="" class="w-14 h-14">
             <p class="font-bold text-2xl">DSA Revision</p>
         </nav>
 
