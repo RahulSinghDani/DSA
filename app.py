@@ -202,7 +202,7 @@ def main():
 """
 
     # Display the HTML content using Streamlit's `st.components.v1.html` function
-    st.components.v1.html(html_content, height=600)
+    st.components.v1.html(html_content, height=800)
 
 if __name__ == "__main__":
     main()
