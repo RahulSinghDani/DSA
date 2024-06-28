@@ -1,13 +1,15 @@
 import streamlit as st
-import os
 
-def main():
+try:
     # Read the HTML content
-    with open(os.path.join('app', 'index.html'), "r", encoding="utf-8") as f:
+    with open("index.html", "r", encoding="utf-8") as f:
         html_content = f.read()
 
     # Display the HTML content using Streamlit's `st.components.v1.html` function
     st.components.v1.html(html_content)
 
-if __name__ == "__main__":
-    main()
+except FileNotFoundError:
+    st.error("File 'index.html' not found. Make sure the file exists and is in the correct location.")
+
+except Exception as e:
+    st.error(f"An error occurred: {e}")
